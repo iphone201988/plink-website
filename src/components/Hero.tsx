@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ParticleBackground from './ParticleBackground';
+import app_img from '../assets/splash-screen.png';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -25,11 +26,11 @@ const Hero = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <span className="absolute -inset-1 bg-gradient-to-r from-[#0593fe] to-[#c4ff00] blur opacity-30 rounded-lg"></span>
+              {/* <span className="absolute -inset-1 bg-gradient-to-r from-[#0593fe] to-[#c4ff00] blur opacity-30 rounded-lg"></span> */}
               <h1 className="relative text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-gray-900">
-                Play Together,{' '}
+                Find pickleball  <br />{' '}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#0593fe] to-[#c4ff00]">
-                  Grow Together
+                 near you
                 </span>
               </h1>
             </motion.div>
@@ -40,7 +41,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Connect with athletes, organize matches, and discover courts nearby. Experience the future of sports community management with Plink.
+              Discover pickleball courts, <br /> join and create games near you.
             </motion.p>
             
             <motion.div 
@@ -58,14 +59,14 @@ const Hero = () => {
                 Download App
               </motion.button>
               
-              <motion.button
+              {/* <motion.button
                 className="group relative px-8 py-4 overflow-hidden rounded-full bg-transparent border-2 border-[#0593fe] text-[#0593fe] text-lg font-medium transition-all duration-300 ease-out hover:bg-blue-50"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-[#0593fe] opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
                 Learn More
-              </motion.button>
+              </motion.button> */}
             </motion.div>
 
             <motion.div
@@ -109,9 +110,9 @@ const Hero = () => {
               >
                 <div className="w-full h-full rounded-[35px] bg-white overflow-hidden">
                   <img 
-                    src="https://images.pexels.com/photos/5453811/pexels-photo-5453811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    src={app_img}
                     alt="Plink App Screen" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-[0_-40px]"
                   />
                 </div>
               </motion.div>

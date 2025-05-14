@@ -16,15 +16,11 @@ const Footer = () => {
   const footerLinks = [
     {
       title: "Product",
-      links: ["Features", "Pricing", "Download", "Updates"]
-    },
-    {
-      title: "Company",
-      links: ["About", "Team", "Careers", "Contact"]
+      links: ["Features", "How It Works", "Download"]
     },
     {
       title: "Resources",
-      links: ["Blog", "FAQ", "Support", "Privacy Policy"]
+      links: ["FAQ", "Support", "Privacy Policy"]
     }
   ];
   

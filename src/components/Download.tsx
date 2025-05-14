@@ -1,10 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Apple, Play } from 'lucide-react';
+import img_1 from '../assets/img-1.webp'
+import img_2 from '../assets/img-2.jpg'
 
 const Download = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-[#0593fe] to-blue-600 text-white overflow-hidden relative">
+    <section className="py-20 bg-gradient-to-br from-[#0593fe] to-blue-600 text-white overflow-hidden relative max-md:py-10">
       <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/2277981/pexels-photo-2277981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] opacity-10 bg-cover bg-center"></div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -55,7 +57,7 @@ const Download = () => {
           >
             <div className="grid grid-cols-2 gap-4">
               <motion.img 
-                src="https://images.pexels.com/photos/3755755/pexels-photo-3755755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src={img_1} 
                 alt="App Screenshot" 
                 className="rounded-lg shadow-2xl w-full h-auto"
                 initial={{ y: 20 }}
@@ -69,7 +71,7 @@ const Download = () => {
                 }}
               />
               <motion.img 
-                src="https://images.pexels.com/photos/3852577/pexels-photo-3852577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src={img_2} 
                 alt="App Screenshot" 
                 className="rounded-lg shadow-2xl w-full h-auto mt-10"
                 initial={{ y: 20 }}

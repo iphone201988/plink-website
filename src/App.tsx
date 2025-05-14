@@ -6,6 +6,7 @@ import Community from './components/Community';
 import Download from './components/Download';
 import Footer from './components/Footer';
 import { AnimatePresence } from 'framer-motion';
+import HowItWorks from './components/HowItWorks';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <Hero />
         <Features />
+        <HowItWorks/>
         <Community />
         <Download />
         <Footer />

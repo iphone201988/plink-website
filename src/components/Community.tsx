@@ -24,7 +24,7 @@ const Community = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white max-md:py-10">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div 
           className="text-center mb-16"

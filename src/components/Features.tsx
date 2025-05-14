@@ -43,7 +43,7 @@ const Features = () => {
   };
 
   return (
-    <section id="features" className="py-20 bg-[#f6f5f8]">
+    <section id="features" className="py-20 bg-[#f6f5f8] max-md:py-10">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div 
           className="text-center mb-16"
@@ -55,7 +55,7 @@ const Features = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Features That Make <span className="text-[#0593fe]">Plink</span> Special
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto text-pretty">
             Everything you need to organize and manage your sports activities in one place.
           </p>
         </motion.div>
@@ -78,21 +78,7 @@ const Features = () => {
           ))}
         </motion.div>
 
-        <motion.div 
-          className="mt-16 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <motion.button
-            className="bg-[#0593fe] text-white text-lg font-medium py-3 px-8 rounded-full hover:bg-blue-600 transition-colors"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Explore All Features
-          </motion.button>
-        </motion.div>
+       
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ const Header = () => {
         <Logo />
         
         <div className="hidden md:flex items-center space-x-8">
-          {['Features', 'How It Works', 'Pricing', 'Contact'].map((item) => (
+          {['Features', 'How It Works', 'Contact'].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
